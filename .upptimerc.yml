@@ -13,11 +13,11 @@ owner: phranck
 repo: status.lmaa.space
 
 sites:
-  - name: Backend
-    url: https://api.lmaa.space/health/backend
-  - name: Backend IPv6
-    slug: backend-ipv6
-    url: https://api.lmaa.space/health/backend
+  - name: Website
+    url: https://api.lmaa.space/health/website
+  - name: Website IPv6
+    slug: website-ipv6
+    url: https://api.lmaa.space/health/website
     type: globalping
     check: http
     ipv6: true
@@ -29,11 +29,11 @@ sites:
     type: globalping
     check: http
     ipv6: true
-  - name: Website
-    url: https://api.lmaa.space/health/website
-  - name: Website IPv6
-    slug: website-ipv6
-    url: https://api.lmaa.space/health/website
+  - name: Backend
+    url: https://api.lmaa.space/health/backend
+  - name: Backend IPv6
+    slug: backend-ipv6
+    url: https://api.lmaa.space/health/backend
     type: globalping
     check: http
     ipv6: true
