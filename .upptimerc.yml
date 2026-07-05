@@ -63,9 +63,7 @@ status-website:
     layout: cards
     logoHeight: 64
     defaultRange: 90d
-    accent: "#b45309"
-    accentDeg: "#d29922"
-    accentDown: "#f85149"
+    # accent / accentDeg / accentDown use Velvet defaults (indigo / amber / red)
     # umami:
     #   websiteId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     #   src: "https://umami.layered.work/script.js"
