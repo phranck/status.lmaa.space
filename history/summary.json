@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Backend",
+    "url": "https://lmaa.space/health/backend",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "backend",
+    "status": "down",
+    "uptime": "10.67%",
+    "uptimeDay": "10.67%",
+    "uptimeWeek": "10.67%",
+    "uptimeMonth": "10.67%",
+    "uptimeYear": "10.67%",
+    "time": 483,
+    "timeDay": 483,
+    "timeWeek": 483,
+    "timeMonth": 483,
+    "timeYear": 483,
+    "dailyMinutesDown": {
+      "2026-07-05": 2
+    }
+  },
+  {
+    "name": "Backend IPv6",
+    "url": "https://lmaa.space/health/backend",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "backend-ipv6",
+    "status": "down",
+    "uptime": "15.40%",
+    "uptimeDay": "15.40%",
+    "uptimeWeek": "15.40%",
+    "uptimeMonth": "15.40%",
+    "uptimeYear": "15.40%",
+    "time": 45,
+    "timeDay": 45,
+    "timeWeek": 45,
+    "timeMonth": 45,
+    "timeYear": 45,
+    "dailyMinutesDown": {
+      "2026-07-05": 2
+    }
+  },
+  {
+    "name": "Dashboard",
+    "url": "https://lmaa.space/health/dashboard",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "dashboard",
+    "status": "down",
+    "uptime": "13.76%",
+    "uptimeDay": "13.76%",
+    "uptimeWeek": "13.76%",
+    "uptimeMonth": "13.76%",
+    "uptimeYear": "13.76%",
+    "time": 466,
+    "timeDay": 466,
+    "timeWeek": 466,
+    "timeMonth": 466,
+    "timeYear": 466,
+    "dailyMinutesDown": {
+      "2026-07-05": 1
+    }
+  },
+  {
+    "name": "Dashboard IPv6",
+    "url": "https://lmaa.space/health/dashboard",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "dashboard-ipv6",
+    "status": "down",
+    "uptime": "16.90%",
+    "uptimeDay": "16.90%",
+    "uptimeWeek": "16.90%",
+    "uptimeMonth": "16.90%",
+    "uptimeYear": "16.90%",
+    "time": 40,
+    "timeDay": 40,
+    "timeWeek": 40,
+    "timeMonth": 40,
+    "timeYear": 40,
+    "dailyMinutesDown": {
+      "2026-07-05": 1
+    }
+  },
+  {
+    "name": "Website",
+    "url": "https://lmaa.space/health/website",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "website",
+    "status": "down",
+    "uptime": "21.86%",
+    "uptimeDay": "21.86%",
+    "uptimeWeek": "21.86%",
+    "uptimeMonth": "21.86%",
+    "uptimeYear": "21.86%",
+    "time": 515,
+    "timeDay": 515,
+    "timeWeek": 515,
+    "timeMonth": 515,
+    "timeYear": 515,
+    "dailyMinutesDown": {
+      "2026-07-05": 1
+    }
+  },
+  {
+    "name": "Website IPv6",
+    "url": "https://lmaa.space/health/website",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "website-ipv6",
+    "status": "down",
+    "uptime": "27.65%",
+    "uptimeDay": "27.65%",
+    "uptimeWeek": "27.65%",
+    "uptimeMonth": "27.65%",
+    "uptimeYear": "27.65%",
+    "time": 296,
+    "timeDay": 296,
+    "timeWeek": 296,
+    "timeMonth": 296,
+    "timeYear": 296,
+    "dailyMinutesDown": {
+      "2026-07-05": 1
+    }
+  },
+  {
+    "name": "Database",
+    "url": "https://lmaa.space/health/db",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "database",
+    "status": "down",
+    "uptime": "40.32%",
+    "uptimeDay": "40.32%",
+    "uptimeWeek": "40.32%",
+    "uptimeMonth": "40.32%",
+    "uptimeYear": "40.32%",
+    "time": 717,
+    "timeDay": 717,
+    "timeWeek": 717,
+    "timeMonth": 717,
+    "timeYear": 717,
+    "dailyMinutesDown": {
+      "2026-07-05": 0
+    }
+  },
+  {
+    "name": "Database IPv6",
+    "url": "https://lmaa.space/health/db",
+    "icon": "https://icons.duckduckgo.com/ip3/lmaa.space.ico",
+    "slug": "database-ipv6",
+    "status": "down",
+    "uptime": "79.07%",
+    "uptimeDay": "79.07%",
+    "uptimeWeek": "79.07%",
+    "uptimeMonth": "79.07%",
+    "uptimeYear": "79.07%",
+    "time": 46,
+    "timeDay": 46,
+    "timeWeek": 46,
+    "timeMonth": 46,
+    "timeYear": 46,
+    "dailyMinutesDown": {
+      "2026-07-05": 0
+    }
+  }
+]
