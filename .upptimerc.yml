@@ -14,34 +14,34 @@ repo: status.lmaa.space
 
 sites:
   - name: Backend
-    url: https://lmaa.space/health/backend
+    url: https://api.lmaa.space/health/backend
   - name: Backend IPv6
     slug: backend-ipv6
-    url: https://lmaa.space/health/backend
+    url: https://api.lmaa.space/health/backend
     type: globalping
     check: http
     ipv6: true
   - name: Dashboard
-    url: https://lmaa.space/health/dashboard
+    url: https://api.lmaa.space/health/dashboard
   - name: Dashboard IPv6
     slug: dashboard-ipv6
-    url: https://lmaa.space/health/dashboard
+    url: https://api.lmaa.space/health/dashboard
     type: globalping
     check: http
     ipv6: true
   - name: Website
-    url: https://lmaa.space/health/website
+    url: https://api.lmaa.space/health/website
   - name: Website IPv6
     slug: website-ipv6
-    url: https://lmaa.space/health/website
+    url: https://api.lmaa.space/health/website
     type: globalping
     check: http
     ipv6: true
   - name: Database
-    url: https://lmaa.space/health/db
+    url: https://api.lmaa.space/health/db
   - name: Database IPv6
     slug: database-ipv6
-    url: https://lmaa.space/health/db
+    url: https://api.lmaa.space/health/db
     type: globalping
     check: http
     ipv6: true
