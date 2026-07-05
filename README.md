@@ -22,10 +22,10 @@ Four steps, all in the GitHub web UI — no local tools, no build to run.
    gh secret set GLOBALPING_TOKEN --repo <owner>/<repo> --body "..."
    ```
 
-   | Secret | Where to get it |
-   |---|---|
-   | `GH_PAT` | [github.com/settings/tokens/new](https://github.com/settings/tokens/new) — choose **classic**, scopes `repo` + `workflow` |
-   | `GLOBALPING_TOKEN` | [jsdelivr.com/globalping](https://www.jsdelivr.com/globalping) — free API key, no credit card |
+   | Secret             | Where to get it                                                                                                           |
+   | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+   | `GH_PAT`           | [github.com/settings/tokens/new](https://github.com/settings/tokens/new) — choose **classic**, scopes `repo` + `workflow` |
+   | `GLOBALPING_TOKEN` | [jsdelivr.com/globalping](https://www.jsdelivr.com/globalping) — free API key, no credit card                             |
 
    > Skip `GLOBALPING_TOKEN` if you do not need IPv6 checks. Any site whose `type` is `globalping` will fail without it.
 
@@ -59,9 +59,9 @@ The front-end and its GitHub Action live in [phranck/velvet](https://github.com/
 
 ## Deploy banners from your CI (optional)
 
-Show a "deploying" banner automatically while your app ships a release. The **Deploy announce** workflow (`.github/workflows/deploy-announce.yml`) already ships in this template and listens for `repository_dispatch` events — you only wire the *sending* side into your application's own repository:
+Show a "deploying" banner automatically while your app ships a release. The **Deploy announce** workflow (`.github/workflows/deploy-announce.yml`) already ships in this template and listens for `repository_dispatch` events — you only wire the _sending_ side into your application's own repository:
 
-1. **Create a token.** A [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) scoped to **only your status repository**, with **Repository permissions → Contents: Read and write**. (Triggering a `repository_dispatch` needs the *Contents* permission — not *Issues*.)
+1. **Create a token.** A [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) scoped to **only your status repository**, with **Repository permissions → Contents: Read and write**. (Triggering a `repository_dispatch` needs the _Contents_ permission — not _Issues_.)
 
 2. **Store it in your app repo.** In your application's repository open **Settings → Secrets and variables → Actions → New repository secret**, name it exactly `STATUS_DISPATCH_TOKEN`, and paste the token.
 
