@@ -45,6 +45,14 @@ sites:
     type: globalping
     check: http
     ipv6: true
+  - name: Storage
+    url: https://api.lmaa.space/health/storage
+  - name: Storage IPv6
+    slug: storage-ipv6
+    url: https://api.lmaa.space/health/storage
+    type: globalping
+    check: http
+    ipv6: true
 
 status-website:
   cname: status.lmaa.space
@@ -66,3 +74,4 @@ status-website:
       dashboard: ph-gauge
       website: ph-globe
       database: ph-database
+      storage: ph-hard-drives
