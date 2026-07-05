@@ -1,7 +1,7 @@
-url: https://lmaa.space/health/website
-status: down
-code: 404
-responseTime: 589
-lastUpdated: 2026-07-05T11:41:02.444Z
+url: https://api.lmaa.space/health/website
+status: up
+code: 200
+responseTime: 529
+lastUpdated: 2026-07-05T11:45:18.873Z
 startTime: 2026-07-05T10:58:23.459Z
 generator: Upptime <https://github.com/upptime/upptime>
