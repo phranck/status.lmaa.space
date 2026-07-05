@@ -49,7 +49,7 @@ sites:
 status-website:
   cname: status.lmaa.space
   name: lmaa.space
-  logoUrl: https://lmaa.space/android-chrome-512x512.png
+  logoUrl: https://lmaa.space/logo-amber.png
   navbar: []
   velvet:
     layout: cards
