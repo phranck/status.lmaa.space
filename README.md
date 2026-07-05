@@ -12,7 +12,22 @@ Four steps, all in the GitHub web UI — no local tools, no build to run.
 
 1. **Create your repository.** Click **Use this template → Create a new repository** at the top of this page.
 
-2. **Add the `GH_PAT` secret.** Create a [classic Personal Access Token](https://github.com/settings/tokens/new) with the **`repo`** and **`workflow`** scopes. Then, in your new repository, open **Settings → Secrets and variables → Actions → New repository secret**, name it exactly `GH_PAT`, and paste the token. _(Upptime uses it to commit monitoring data and to deploy the page.)_
+2. **Add the required secrets.** Upptime needs two repository secrets. Set them via the GitHub web UI (**Settings → Secrets and variables → Actions → New repository secret**) or with the `gh` CLI:
+
+   ```bash
+   # Classic Personal Access Token — Upptime uses it to commit monitoring data and deploy the page.
+   gh secret set GH_PAT --repo <owner>/<repo> --body "ghp_..."
+
+   # Globalping API token — enables IPv6 checks (Globalping probes from dual-stack locations).
+   gh secret set GLOBALPING_TOKEN --repo <owner>/<repo> --body "..."
+   ```
+
+   | Secret | Where to get it |
+   |---|---|
+   | `GH_PAT` | [github.com/settings/tokens/new](https://github.com/settings/tokens/new) — choose **classic**, scopes `repo` + `workflow` |
+   | `GLOBALPING_TOKEN` | [jsdelivr.com/globalping](https://www.jsdelivr.com/globalping) — free API key, no credit card |
+
+   > Skip `GLOBALPING_TOKEN` if you do not need IPv6 checks. Any site whose `type` is `globalping` will fail without it.
 
 3. **Turn on Pages.** Open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
 
