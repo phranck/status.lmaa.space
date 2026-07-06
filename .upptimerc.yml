@@ -66,9 +66,10 @@ status-website:
     accent: "#16a34a"
     accentDeg: "#d29922"
     accentDown: "#f85149"
-    # umami:
-    #   websiteId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    #   src: "https://umami.layered.work/script.js"
+    # Visitor analytics (self-hosted Umami).
+    umami:
+      websiteId: "f1b37937-ca48-4bfc-a8be-15e9b80dd320"
+      src: "https://umami.layered.work/script.js"
     icons:
       backend: ph-gear-six
       dashboard: ph-gauge
