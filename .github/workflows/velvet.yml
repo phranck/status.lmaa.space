@@ -1,43 +1,45 @@
-# Build + deploy the Velvet front-end (https://github.com/phranck/velvet) to
-# GitHub Pages via the OFFICIAL Pages deployment (Pages source = "GitHub
-# Actions"). This deliberately bypasses the gh-pages branch, so Upptime's stock
-# site builders (site.yml / setup.yml, which push Sapper to gh-pages) can no
-# longer overwrite Velvet. Velvet fetches monitoring data at runtime, so this
-# only runs on config/branding changes, incident (issue) changes, manual
-# dispatch, or the static_site event. Incident changes rebuild the static
-# /incidents.atom feed that the Subscribe button points at.
+# Build and deploy Velvet through the official GitHub Pages workflow. Public
+# data comes exclusively from the validated Velvet v1 documents.
 name: Velvet
+
 on:
   push:
+    branches: [main]
     paths:
-      - ".upptimerc.yml"
       - "assets/**"
       - ".github/workflows/velvet.yml"
-  issues:
-    types: [opened, closed, reopened, edited, labeled, unlabeled]
-  repository_dispatch:
-    types: [static_site]
+  workflow_run:
+    workflows: ["Sync Velvet data"]
+    types: [completed]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: velvet-pages
   cancel-in-progress: false
+
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     name: Build and deploy
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out the latest default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
       - name: Build Velvet site
-        uses: phranck/velvet@v1
+        uses: phranck/velvet@b4d7f3184cec50a532faeb67b5dc61acb50c752f
         with:
           config: .upptimerc.yml
+          data: velvet-data/v1
           output: velvet-dist
       - name: Configure Pages
         uses: actions/configure-pages@v5

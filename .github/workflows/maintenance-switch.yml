@@ -20,6 +20,7 @@ on:
         default: "30"
 permissions:
   issues: write
+  contents: write
 jobs:
   open:
     runs-on: ubuntu-latest
@@ -39,4 +40,9 @@ jobs:
               title: `🛠 ${i.message}`,
               labels: ["maintenance"],
               body: `${meta}\n\n${i.message}\n\nClose this issue to clear the banner.`,
+            });
+            await github.rest.repos.createDispatchEvent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              event_type: "velvet_sync",
             });

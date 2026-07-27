@@ -12,6 +12,13 @@
 owner: phranck
 repo: status.lmaa.space
 
+# Transitional Upptime jobs may update monitoring input, but must not delete
+# incidents or manage repository metadata while Velvet owns the public page.
+skipDeleteIssues: true
+skipDescriptionUpdate: true
+skipHomepageUpdate: true
+skipTopicsUpdate: true
+
 sites:
   - name: Website
     url: https://api.lmaa.space/health/website
