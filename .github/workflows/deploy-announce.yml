@@ -20,7 +20,7 @@ on:
     types: [deploy_start, deploy_end]
 permissions:
   issues: write
-  contents: read
+  contents: write
 jobs:
   announce:
     runs-on: ubuntu-latest
@@ -56,3 +56,9 @@ jobs:
                 }
               }
             }
+
+            await github.rest.repos.createDispatchEvent({
+              owner,
+              repo,
+              event_type: "velvet_sync",
+            });
