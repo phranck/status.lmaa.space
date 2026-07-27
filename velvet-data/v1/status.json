@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T23:22:46.747Z",
+  "generatedAt": "2026-07-27T23:26:14.706Z",
   "monitoringStartedAt": "2026-07-05T10:57:35.000Z",
   "services": [
     {
@@ -12,14 +12,14 @@
           "id": "ipv4",
           "protocol": "ipv4",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:44.007Z",
+          "checkedAt": "2026-07-27T23:26:12.590Z",
           "responseTimeMs": 421
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:44.544Z",
+          "checkedAt": "2026-07-27T23:26:12.990Z",
           "responseTimeMs": 61
         }
       ],
@@ -126,7 +126,17 @@
         },
         {
           "date": "2026-07-25",
-          "monitoredSeconds": 84166,
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-26",
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-27",
+          "monitoredSeconds": 84374,
           "unavailableSeconds": 0
         }
       ]
@@ -140,14 +150,14 @@
           "id": "ipv4",
           "protocol": "ipv4",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:42.774Z",
+          "checkedAt": "2026-07-27T23:26:11.775Z",
           "responseTimeMs": 445
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:43.481Z",
+          "checkedAt": "2026-07-27T23:26:12.177Z",
           "responseTimeMs": 85
         }
       ],
@@ -254,7 +264,17 @@
         },
         {
           "date": "2026-07-25",
-          "monitoredSeconds": 84166,
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-26",
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-27",
+          "monitoredSeconds": 84374,
           "unavailableSeconds": 0
         }
       ]
@@ -268,14 +288,14 @@
           "id": "ipv4",
           "protocol": "ipv4",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:45.073Z",
+          "checkedAt": "2026-07-27T23:26:13.475Z",
           "responseTimeMs": 417
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:45.623Z",
+          "checkedAt": "2026-07-27T23:26:13.894Z",
           "responseTimeMs": 71
         }
       ],
@@ -382,7 +402,17 @@
         },
         {
           "date": "2026-07-25",
-          "monitoredSeconds": 84166,
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-26",
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-27",
+          "monitoredSeconds": 84374,
           "unavailableSeconds": 0
         }
       ]
@@ -396,14 +426,14 @@
           "id": "ipv4",
           "protocol": "ipv4",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:46.163Z",
+          "checkedAt": "2026-07-27T23:26:14.319Z",
           "responseTimeMs": 413
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:46.747Z",
+          "checkedAt": "2026-07-27T23:26:14.706Z",
           "responseTimeMs": 75
         }
       ],
@@ -510,7 +540,17 @@
         },
         {
           "date": "2026-07-25",
-          "monitoredSeconds": 84166,
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-26",
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-27",
+          "monitoredSeconds": 84374,
           "unavailableSeconds": 0
         }
       ]
@@ -524,14 +564,14 @@
           "id": "ipv4",
           "protocol": "ipv4",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:41.290Z",
+          "checkedAt": "2026-07-27T23:26:10.569Z",
           "responseTimeMs": 708
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
-          "checkedAt": "2026-07-25T23:22:42.178Z",
+          "checkedAt": "2026-07-27T23:26:11.298Z",
           "responseTimeMs": 185
         }
       ],
@@ -638,7 +678,17 @@
         },
         {
           "date": "2026-07-25",
-          "monitoredSeconds": 84166,
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-26",
+          "monitoredSeconds": 86400,
+          "unavailableSeconds": 0
+        },
+        {
+          "date": "2026-07-27",
+          "monitoredSeconds": 84374,
           "unavailableSeconds": 0
         }
       ]
