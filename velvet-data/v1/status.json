@@ -13,7 +13,7 @@
           "protocol": "ipv4",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:12.590Z",
-          "responseTimeMs": 421
+          "responseTimeMs": 420
         },
         {
           "id": "ipv6",
@@ -151,7 +151,7 @@
           "protocol": "ipv4",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:11.775Z",
-          "responseTimeMs": 445
+          "responseTimeMs": 444
         },
         {
           "id": "ipv6",
@@ -289,14 +289,14 @@
           "protocol": "ipv4",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:13.475Z",
-          "responseTimeMs": 417
+          "responseTimeMs": 416
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:13.894Z",
-          "responseTimeMs": 71
+          "responseTimeMs": 70
         }
       ],
       "dailyAvailability": [
@@ -565,14 +565,14 @@
           "protocol": "ipv4",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:10.569Z",
-          "responseTimeMs": 708
+          "responseTimeMs": 707
         },
         {
           "id": "ipv6",
           "protocol": "ipv6",
           "status": "operational",
           "checkedAt": "2026-07-27T23:26:11.298Z",
-          "responseTimeMs": 185
+          "responseTimeMs": 183
         }
       ],
       "dailyAvailability": [
