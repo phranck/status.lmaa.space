@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-27T23:26:14.706Z",
+  "generatedAt": "2026-07-28T23:24:21.000Z",
   "monitoringStartedAt": "2026-07-05T10:57:35.000Z",
   "series": [
     {
@@ -139,6 +139,10 @@
         {
           "timestamp": "2026-07-27T23:26:12.000Z",
           "responseTimeMs": 395
+        },
+        {
+          "timestamp": "2026-07-28T23:24:18.000Z",
+          "responseTimeMs": 495
         }
       ]
     },
@@ -278,6 +282,10 @@
         {
           "timestamp": "2026-07-27T23:26:13.000Z",
           "responseTimeMs": 34
+        },
+        {
+          "timestamp": "2026-07-28T23:24:19.000Z",
+          "responseTimeMs": 62
         }
       ]
     },
@@ -417,6 +425,10 @@
         {
           "timestamp": "2026-07-27T23:26:11.000Z",
           "responseTimeMs": 420
+        },
+        {
+          "timestamp": "2026-07-28T23:24:17.000Z",
+          "responseTimeMs": 557
         }
       ]
     },
@@ -556,6 +568,10 @@
         {
           "timestamp": "2026-07-27T23:26:12.000Z",
           "responseTimeMs": 90
+        },
+        {
+          "timestamp": "2026-07-28T23:24:17.000Z",
+          "responseTimeMs": 78
         }
       ]
     },
@@ -695,6 +711,10 @@
         {
           "timestamp": "2026-07-27T23:26:13.000Z",
           "responseTimeMs": 392
+        },
+        {
+          "timestamp": "2026-07-28T23:24:19.000Z",
+          "responseTimeMs": 516
         }
       ]
     },
@@ -834,6 +854,10 @@
         {
           "timestamp": "2026-07-27T23:26:13.000Z",
           "responseTimeMs": 37
+        },
+        {
+          "timestamp": "2026-07-28T23:24:20.000Z",
+          "responseTimeMs": 68
         }
       ]
     },
@@ -957,6 +981,10 @@
         {
           "timestamp": "2026-07-27T23:26:14.000Z",
           "responseTimeMs": 406
+        },
+        {
+          "timestamp": "2026-07-28T23:24:20.000Z",
+          "responseTimeMs": 496
         }
       ]
     },
@@ -1080,6 +1108,10 @@
         {
           "timestamp": "2026-07-27T23:26:14.000Z",
           "responseTimeMs": 71
+        },
+        {
+          "timestamp": "2026-07-28T23:24:21.000Z",
+          "responseTimeMs": 90
         }
       ]
     },
@@ -1219,6 +1251,10 @@
         {
           "timestamp": "2026-07-27T23:26:10.000Z",
           "responseTimeMs": 662
+        },
+        {
+          "timestamp": "2026-07-28T23:24:15.000Z",
+          "responseTimeMs": 862
         }
       ]
     },
@@ -1358,6 +1394,10 @@
         {
           "timestamp": "2026-07-27T23:26:11.000Z",
           "responseTimeMs": 135
+        },
+        {
+          "timestamp": "2026-07-28T23:24:16.000Z",
+          "responseTimeMs": 146
         }
       ]
     }
