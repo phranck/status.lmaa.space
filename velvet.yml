@@ -1,0 +1,84 @@
+schemaVersion: 1
+
+repository:
+  owner: phranck
+  name: status.lmaa.space
+
+statusPage:
+  name: lmaa.space
+  customDomain: status.lmaa.space
+  logoUrl: https://lmaa.space/logo-amber.png
+  logoHeight: 64
+  layout: cards
+  defaultRange: 90d
+  theme:
+    name: lmaa.space
+    palette:
+      accent: "#16a34a"
+      warning: "#d29922"
+      danger: "#f85149"
+    grid:
+      operational: accent
+      degraded: warning
+      outage: danger
+  icons:
+    backend: ph-gear-six
+    dashboard: ph-gauge
+    database: ph-database
+    storage: ph-hard-drives
+    website: ph-globe
+  analytics:
+    umami:
+      websiteId: f1b37937-ca48-4bfc-a8be-15e9b80dd320
+      src: https://umami.layered.work/script.js
+
+services:
+  - id: backend
+    name: Backend
+    checks:
+      - id: backend
+        name: Backend
+        url: https://api.lmaa.space/health/backend
+        method: GET
+        expectedStatusCodes: [200]
+  - id: dashboard
+    name: Dashboard
+    checks:
+      - id: dashboard
+        name: Dashboard
+        url: https://api.lmaa.space/health/dashboard
+        method: GET
+        expectedStatusCodes: [200]
+  - id: database
+    name: Database
+    checks:
+      - id: database
+        name: Database
+        url: https://api.lmaa.space/health/db
+        method: GET
+        expectedStatusCodes: [200]
+  - id: storage
+    name: Storage
+    checks:
+      - id: storage
+        name: Storage
+        url: https://api.lmaa.space/health/storage
+        method: GET
+        expectedStatusCodes: [200]
+  - id: website
+    name: Website
+    checks:
+      - id: website
+        name: Website
+        url: https://api.lmaa.space/health/website
+        method: GET
+        expectedStatusCodes: [200]
+
+incidents:
+  failureThreshold: 2
+  recoveryThreshold: 2
+  incidentLabel: incident
+  maintenanceLabel: maintenance
+
+history:
+  retentionDays: 365

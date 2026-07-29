@@ -1,17 +1,18 @@
-# Build and deploy Velvet through the official GitHub Pages workflow. Public
-# data comes exclusively from the validated Velvet v1 documents.
-name: Velvet
+# Build and deploy the native Velvet page after configuration changes or a
+# successful monitoring run.
+name: Velvet Pages
 
 on:
   push:
     branches: [main]
     paths:
+      - "velvet.yml"
       - "assets/**"
       - ".github/workflows/velvet.yml"
   workflow_run:
-    workflows: ["Sync Velvet data"]
+    workflows: ["Velvet status", "Velvet response times"]
     types: [completed]
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -23,7 +24,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     name: Build and deploy
     runs-on: ubuntu-latest
@@ -32,14 +33,19 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Check out the latest default branch
-        uses: actions/checkout@v7
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           ref: ${{ github.event.repository.default_branch }}
-      - name: Build Velvet site
-        uses: phranck/velvet@b4d7f3184cec50a532faeb67b5dc61acb50c752f
+      - name: Check out Velvet data
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          config: .upptimerc.yml
-          data: velvet-data/v1
+          ref: velvet-data
+          path: .velvet-data
+      - name: Build Velvet site
+        uses: phranck/velvet@fd5889d73c56569d009cb1149acfd43ebe411bf7
+        with:
+          config: velvet.yml
+          data: .velvet-data/velvet-data/v1
           output: velvet-dist
       - name: Configure Pages
         uses: actions/configure-pages@v5
