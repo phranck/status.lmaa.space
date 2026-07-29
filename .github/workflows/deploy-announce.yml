@@ -1,58 +1,85 @@
-# Auto deploy banner driven by your application's CI (optional, advanced).
-# Your app's repo sends a repository_dispatch (deploy_start / deploy_end) per service;
-# this opens/closes a `maintenance`-labelled GitHub Issue. Upptime's status page
-# reads open maintenance issues LIVE via the GitHub API, so the banner appears /
-# clears without waiting for a site rebuild.
-#
-# Safety: client_payload is read at runtime via the github-script `context` object,
-# never interpolated into a shell `run:` step, so there is no workflow-injection vector.
-#
-# Sending side (add to your app's deploy workflow; needs a fine-grained
-# STATUS_DISPATCH_TOKEN secret with contents:write on this repo). The `slug`
-# must match a site's Upptime slug (the slugified sites[].name in
-# .upptimerc.yml, e.g. "Developer Site" -> developer-site); `service` is only
-# the banner label. Full walkthrough: README, "Deploy banners from your CI":
-#   gh api repos/$OWNER/$REPO/dispatches \
-#     -f event_type=deploy_start -F client_payload[service]=Backend -F client_payload[slug]=backend
+# Application repositories may announce deploy_start and deploy_end events.
+# The service slug must match a service ID in velvet.yml.
 name: Deploy announce
+
 on:
   repository_dispatch:
     types: [deploy_start, deploy_end]
+
 permissions:
-  issues: write
   contents: write
+  issues: write
+
 jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v7
+      - name: Update deploy maintenance
+        uses: actions/github-script@v7
         with:
           script: |
-            const type = context.payload.action; // deploy_start | deploy_end
-            const p = context.payload.client_payload || {};
-            const service = String(p.service || "service");
-            const slug = String(p.slug || service.toLowerCase());
-            const marker = `<!-- deploy-banner:${slug} -->`;
+            const type = context.payload.action;
+            const payload = context.payload.client_payload || {};
+            const service = String(payload.service || "Service").trim();
+            const slug = String(payload.slug || service)
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-+|-+$/g, "");
+            if (!/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(slug) || slug.length > 64) {
+              core.setFailed("The deploy service slug is invalid.");
+              return;
+            }
+
             const { owner, repo } = context.repo;
+            const marker = `<!-- deploy-maintenance:${slug} -->`;
 
             if (type === "deploy_start") {
-              const minutes = Number(p.minutes) || 15;
+              const requestedMinutes = Number(payload.minutes);
+              const minutes = Number.isFinite(requestedMinutes) && requestedMinutes > 0
+                ? Math.min(1440, Math.floor(requestedMinutes))
+                : 15;
               const start = new Date();
               const end = new Date(start.getTime() + minutes * 60000);
-              const meta = `<!-- start: ${start.toISOString()} end: ${end.toISOString()} expectedDegraded: ${slug} -->`;
+              const body = [
+                "### Affected services and checks",
+                "",
+                `- ${service} (all checks) [${slug}/*]`,
+                "",
+                "### Starts at",
+                "",
+                start.toISOString(),
+                "",
+                "### Ends at",
+                "",
+                end.toISOString(),
+                "",
+                "### Summary",
+                "",
+                `Automated deploy in progress for **${service}**.`,
+                "",
+                marker,
+              ].join("\n");
               await github.rest.issues.create({
-                owner, repo,
-                title: `🚀 Deploying ${service}`,
+                owner,
+                repo,
+                title: `[Maintenance] Deploying ${service}`,
                 labels: ["maintenance"],
-                body: `${marker}\n${meta}\n\nAutomated deploy in progress for **${service}**. This banner clears when the deploy finishes.`,
+                body,
               });
             } else {
-              const open = await github.paginate(github.rest.issues.listForRepo, {
-                owner, repo, state: "open", labels: "maintenance", per_page: 100,
-              });
-              for (const issue of open) {
+              const openIssues = await github.paginate(
+                github.rest.issues.listForRepo,
+                { owner, repo, state: "open", labels: "maintenance", per_page: 100 },
+              );
+              for (const issue of openIssues) {
                 if ((issue.body || "").includes(marker)) {
-                  await github.rest.issues.update({ owner, repo, issue_number: issue.number, state: "closed" });
+                  await github.rest.issues.update({
+                    owner,
+                    repo,
+                    issue_number: issue.number,
+                    state: "closed",
+                  });
                 }
               }
             }
@@ -60,5 +87,5 @@ jobs:
             await github.rest.repos.createDispatchEvent({
               owner,
               repo,
-              event_type: "velvet_sync",
+              event_type: "velvet-monitor",
             });

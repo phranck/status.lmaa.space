@@ -1,48 +1,96 @@
-# Manual maintenance banner — the fallback for planned work that is NOT a deploy.
-# Run from the Actions tab ("Run workflow"), the GitHub mobile app, or:
-#   gh workflow run maintenance-switch.yml -f message="DB upgrade" -f services="api" -f minutes=45
-#
-# Safety: inputs are read via the github-script `context` object, never interpolated
-# into a shell `run:` step.
+# The planned-maintenance Issue Form is the normal path. This manual Action is
+# a compact fallback for opening a maintenance window from the Actions tab.
 name: Maintenance switch
+
 on:
   workflow_dispatch:
     inputs:
       message:
-        description: "What is happening (shown on the status page)"
+        description: "What is happening"
         required: true
       services:
-        description: "Affected service slugs, comma-separated (optional)"
-        required: false
+        description: "Service IDs, comma-separated"
+        required: true
+        default: "website"
       minutes:
         description: "Expected duration in minutes"
         required: false
         default: "30"
+
 permissions:
-  issues: write
   contents: write
+  issues: write
+
 jobs:
   open:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v7
+      - name: Open planned maintenance
+        uses: actions/github-script@v7
         with:
           script: |
-            const i = context.payload.inputs || {};
-            const minutes = Number(i.minutes) || 30;
+            const inputs = context.payload.inputs || {};
+            const services = new Map([
+              ["backend", "Backend"],
+              ["dashboard", "Dashboard"],
+              ["database", "Database"],
+              ["storage", "Storage"],
+              ["website", "Website"],
+            ]);
+            const selected = [...new Set(
+              String(inputs.services || "")
+                .split(",")
+                .map((value) => value.trim().toLowerCase())
+                .filter(Boolean),
+            )];
+            const unknown = selected.filter((serviceId) => !services.has(serviceId));
+            if (selected.length === 0 || unknown.length > 0) {
+              core.setFailed(
+                unknown.length > 0
+                  ? `Unknown service IDs: ${unknown.join(", ")}`
+                  : "Select at least one service ID.",
+              );
+              return;
+            }
+
+            const requestedMinutes = Number(inputs.minutes);
+            const minutes = Number.isFinite(requestedMinutes) && requestedMinutes > 0
+              ? Math.min(1440, Math.floor(requestedMinutes))
+              : 30;
             const start = new Date();
             const end = new Date(start.getTime() + minutes * 60000);
-            const degraded = String(i.services || "").trim();
-            const meta = `<!-- start: ${start.toISOString()} end: ${end.toISOString()}${degraded ? ` expectedDegraded: ${degraded}` : ""} -->`;
+            const message = String(inputs.message || "Planned maintenance").trim();
+            const targets = selected.map(
+              (serviceId) => `- ${services.get(serviceId)} (all checks) [${serviceId}/*]`,
+            );
+            const body = [
+              "### Affected services and checks",
+              "",
+              ...targets,
+              "",
+              "### Starts at",
+              "",
+              start.toISOString(),
+              "",
+              "### Ends at",
+              "",
+              end.toISOString(),
+              "",
+              "### Summary",
+              "",
+              message,
+              "",
+              "Close this issue to end the maintenance window early.",
+            ].join("\n");
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `🛠 ${i.message}`,
+              title: `[Maintenance] ${message}`,
               labels: ["maintenance"],
-              body: `${meta}\n\n${i.message}\n\nClose this issue to clear the banner.`,
+              body,
             });
             await github.rest.repos.createDispatchEvent({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              event_type: "velvet_sync",
+              event_type: "velvet-monitor",
             });

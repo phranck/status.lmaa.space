@@ -1,10 +1,12 @@
 # lmaa.space Status
 
-Uptime monitoring and status page for [lmaa.space](https://lmaa.space), live at **[status.lmaa.space](https://status.lmaa.space)**.
+GitHub-native monitoring and the public status page for [lmaa.space](https://lmaa.space), live at **[status.lmaa.space](https://status.lmaa.space)**.
 
-Endpoints are temporarily probed by [Upptime](https://upptime.js.org), with optional IPv6 checks provided by Globalping. GitHub Actions retain the raw monitoring input in `history/` and publish validated, URL-free Velvet documents in `velvet-data/v1/`. The public [Velvet](https://github.com/phranck/velvet) page reads only those documents.
+[Velvet](https://github.com/phranck/velvet) checks the five configured IPv4 health endpoints every five minutes. Response times are sampled every six hours. Validated public data and internal monitor state live on the dedicated `velvet-data` branch and are retained for 365 days.
 
-Incidents and maintenance windows are tracked as GitHub Issues. Monitoring, data synchronization, incident normalization, and GitHub Pages deployment use the repository-scoped `GITHUB_TOKEN`; Globalping is the only optional external integration.
+Confirmed failures and planned maintenance are tracked as GitHub Issues. The repository needs no external monitoring provider or API key. IPv6 monitoring remains unavailable until GitHub-hosted runners provide documented native IPv6 connectivity.
+
+The configuration is stored in [`velvet.yml`](velvet.yml). Monitoring and deployment run through GitHub Actions using the repository-scoped `GITHUB_TOKEN`.
 
 ## License
 
