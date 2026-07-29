@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T23:11:27.791Z",
+  "generatedAt": "2026-07-29T23:15:12.539Z",
   "events": [
     {
       "id": "incident-1",
@@ -53,14 +53,14 @@
     {
       "id": "maintenance-13",
       "kind": "maintenance",
-      "state": "active",
+      "state": "completed",
       "title": "Velvet production verification",
       "summary": "Velvet production verification\n\nClose this issue to end the maintenance window early.",
       "affectedServiceIds": [
         "website"
       ],
       "startsAt": "2026-07-29T23:11:08.179Z",
-      "endsAt": "2026-07-29T23:16:08.179Z"
+      "endsAt": "2026-07-29T23:14:47.000Z"
     }
   ]
 }
