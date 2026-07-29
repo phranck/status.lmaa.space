@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T00:38:36.000Z",
+  "monitoringStartedAt": "2026-07-05T10:57:35.000Z",
+  "series": [
+    {
+      "serviceId": "backend",
+      "checkId": "backend",
+      "protocol": "ipv4",
+      "samples": [
+        {
+          "timestamp": "2026-07-05T10:57:35.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:04:08.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:14:32.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:40:32.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:45:12.000Z",
+          "responseTimeMs": 771
+        },
+        {
+          "timestamp": "2026-07-05T12:01:10.000Z",
+          "responseTimeMs": 389
+        },
+        {
+          "timestamp": "2026-07-05T12:03:13.000Z",
+          "responseTimeMs": 353
+        },
+        {
+          "timestamp": "2026-07-05T12:15:15.000Z",
+          "responseTimeMs": 469
+        },
+        {
+          "timestamp": "2026-07-05T12:18:43.000Z",
+          "responseTimeMs": 425
+        },
+        {
+          "timestamp": "2026-07-05T12:20:53.000Z",
+          "responseTimeMs": 466
+        },
+        {
+          "timestamp": "2026-07-05T12:21:26.000Z",
+          "responseTimeMs": 466
+        },
+        {
+          "timestamp": "2026-07-05T12:22:56.000Z",
+          "responseTimeMs": 466
+        },
+        {
+          "timestamp": "2026-07-05T23:26:39.000Z",
+          "responseTimeMs": 471
+        },
+        {
+          "timestamp": "2026-07-06T14:44:08.000Z",
+          "responseTimeMs": 471
+        },
+        {
+          "timestamp": "2026-07-06T23:28:46.000Z",
+          "responseTimeMs": 340
+        },
+        {
+          "timestamp": "2026-07-07T23:23:39.000Z",
+          "responseTimeMs": 469
+        },
+        {
+          "timestamp": "2026-07-08T23:27:54.000Z",
+          "responseTimeMs": 314
+        },
+        {
+          "timestamp": "2026-07-09T23:30:59.000Z",
+          "responseTimeMs": 307
+        },
+        {
+          "timestamp": "2026-07-10T23:23:25.000Z",
+          "responseTimeMs": 296
+        },
+        {
+          "timestamp": "2026-07-12T23:21:04.000Z",
+          "responseTimeMs": 478
+        },
+        {
+          "timestamp": "2026-07-13T23:21:36.000Z",
+          "responseTimeMs": 308
+        },
+        {
+          "timestamp": "2026-07-14T23:21:06.000Z",
+          "responseTimeMs": 414
+        },
+        {
+          "timestamp": "2026-07-15T23:23:05.000Z",
+          "responseTimeMs": 486
+        },
+        {
+          "timestamp": "2026-07-17T23:19:47.000Z",
+          "responseTimeMs": 309
+        },
+        {
+          "timestamp": "2026-07-18T23:21:02.000Z",
+          "responseTimeMs": 447
+        },
+        {
+          "timestamp": "2026-07-19T23:22:12.000Z",
+          "responseTimeMs": 344
+        },
+        {
+          "timestamp": "2026-07-20T23:24:19.000Z",
+          "responseTimeMs": 306
+        },
+        {
+          "timestamp": "2026-07-21T23:22:26.000Z",
+          "responseTimeMs": 345
+        },
+        {
+          "timestamp": "2026-07-22T23:24:08.000Z",
+          "responseTimeMs": 477
+        },
+        {
+          "timestamp": "2026-07-23T23:22:52.000Z",
+          "responseTimeMs": 311
+        },
+        {
+          "timestamp": "2026-07-24T23:24:48.000Z",
+          "responseTimeMs": 348
+        },
+        {
+          "timestamp": "2026-07-25T23:22:44.000Z",
+          "responseTimeMs": 498
+        },
+        {
+          "timestamp": "2026-07-27T23:26:12.000Z",
+          "responseTimeMs": 395
+        },
+        {
+          "timestamp": "2026-07-28T23:24:18.000Z",
+          "responseTimeMs": 495
+        }
+      ]
+    },
+    {
+      "serviceId": "dashboard",
+      "checkId": "dashboard",
+      "protocol": "ipv4",
+      "samples": [
+        {
+          "timestamp": "2026-07-05T10:58:07.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:04:34.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:14:47.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:40:47.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:45:15.000Z",
+          "responseTimeMs": 480
+        },
+        {
+          "timestamp": "2026-07-05T12:01:12.000Z",
+          "responseTimeMs": 323
+        },
+        {
+          "timestamp": "2026-07-05T12:03:12.000Z",
+          "responseTimeMs": 368
+        },
+        {
+          "timestamp": "2026-07-05T12:15:12.000Z",
+          "responseTimeMs": 556
+        },
+        {
+          "timestamp": "2026-07-05T12:18:42.000Z",
+          "responseTimeMs": 445
+        },
+        {
+          "timestamp": "2026-07-05T12:20:52.000Z",
+          "responseTimeMs": 502
+        },
+        {
+          "timestamp": "2026-07-05T12:21:24.000Z",
+          "responseTimeMs": 479
+        },
+        {
+          "timestamp": "2026-07-05T12:22:55.000Z",
+          "responseTimeMs": 481
+        },
+        {
+          "timestamp": "2026-07-05T23:26:37.000Z",
+          "responseTimeMs": 500
+        },
+        {
+          "timestamp": "2026-07-06T14:44:06.000Z",
+          "responseTimeMs": 550
+        },
+        {
+          "timestamp": "2026-07-06T23:28:45.000Z",
+          "responseTimeMs": 418
+        },
+        {
+          "timestamp": "2026-07-07T23:23:37.000Z",
+          "responseTimeMs": 489
+        },
+        {
+          "timestamp": "2026-07-08T23:27:52.000Z",
+          "responseTimeMs": 387
+        },
+        {
+          "timestamp": "2026-07-09T23:30:59.000Z",
+          "responseTimeMs": 358
+        },
+        {
+          "timestamp": "2026-07-10T23:23:25.000Z",
+          "responseTimeMs": 330
+        },
+        {
+          "timestamp": "2026-07-12T23:21:03.000Z",
+          "responseTimeMs": 507
+        },
+        {
+          "timestamp": "2026-07-13T23:21:36.000Z",
+          "responseTimeMs": 371
+        },
+        {
+          "timestamp": "2026-07-14T23:21:04.000Z",
+          "responseTimeMs": 451
+        },
+        {
+          "timestamp": "2026-07-15T23:23:04.000Z",
+          "responseTimeMs": 510
+        },
+        {
+          "timestamp": "2026-07-17T23:19:46.000Z",
+          "responseTimeMs": 325
+        },
+        {
+          "timestamp": "2026-07-18T23:20:58.000Z",
+          "responseTimeMs": 530
+        },
+        {
+          "timestamp": "2026-07-19T23:22:11.000Z",
+          "responseTimeMs": 356
+        },
+        {
+          "timestamp": "2026-07-20T23:24:19.000Z",
+          "responseTimeMs": 372
+        },
+        {
+          "timestamp": "2026-07-21T23:22:24.000Z",
+          "responseTimeMs": 363
+        },
+        {
+          "timestamp": "2026-07-22T23:24:07.000Z",
+          "responseTimeMs": 513
+        },
+        {
+          "timestamp": "2026-07-23T23:22:51.000Z",
+          "responseTimeMs": 347
+        },
+        {
+          "timestamp": "2026-07-24T23:24:47.000Z",
+          "responseTimeMs": 378
+        },
+        {
+          "timestamp": "2026-07-25T23:22:42.000Z",
+          "responseTimeMs": 568
+        },
+        {
+          "timestamp": "2026-07-27T23:26:11.000Z",
+          "responseTimeMs": 420
+        },
+        {
+          "timestamp": "2026-07-28T23:24:17.000Z",
+          "responseTimeMs": 557
+        }
+      ]
+    },
+    {
+      "serviceId": "database",
+      "checkId": "database",
+      "protocol": "ipv4",
+      "samples": [
+        {
+          "timestamp": "2026-07-05T10:59:06.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:05:29.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:15:18.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:41:16.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:45:21.000Z",
+          "responseTimeMs": 470
+        },
+        {
+          "timestamp": "2026-07-05T12:01:15.000Z",
+          "responseTimeMs": 303
+        },
+        {
+          "timestamp": "2026-07-05T12:03:15.000Z",
+          "responseTimeMs": 347
+        },
+        {
+          "timestamp": "2026-07-05T12:15:17.000Z",
+          "responseTimeMs": 473
+        },
+        {
+          "timestamp": "2026-07-05T12:18:45.000Z",
+          "responseTimeMs": 434
+        },
+        {
+          "timestamp": "2026-07-05T12:20:55.000Z",
+          "responseTimeMs": 473
+        },
+        {
+          "timestamp": "2026-07-05T12:21:27.000Z",
+          "responseTimeMs": 467
+        },
+        {
+          "timestamp": "2026-07-05T12:22:58.000Z",
+          "responseTimeMs": 470
+        },
+        {
+          "timestamp": "2026-07-05T23:26:40.000Z",
+          "responseTimeMs": 473
+        },
+        {
+          "timestamp": "2026-07-06T14:44:09.000Z",
+          "responseTimeMs": 470
+        },
+        {
+          "timestamp": "2026-07-06T23:28:47.000Z",
+          "responseTimeMs": 343
+        },
+        {
+          "timestamp": "2026-07-07T23:23:40.000Z",
+          "responseTimeMs": 460
+        },
+        {
+          "timestamp": "2026-07-08T23:27:55.000Z",
+          "responseTimeMs": 308
+        },
+        {
+          "timestamp": "2026-07-09T23:31:00.000Z",
+          "responseTimeMs": 316
+        },
+        {
+          "timestamp": "2026-07-10T23:23:27.000Z",
+          "responseTimeMs": 302
+        },
+        {
+          "timestamp": "2026-07-12T23:21:05.000Z",
+          "responseTimeMs": 478
+        },
+        {
+          "timestamp": "2026-07-13T23:21:37.000Z",
+          "responseTimeMs": 305
+        },
+        {
+          "timestamp": "2026-07-14T23:21:07.000Z",
+          "responseTimeMs": 390
+        },
+        {
+          "timestamp": "2026-07-15T23:23:06.000Z",
+          "responseTimeMs": 484
+        },
+        {
+          "timestamp": "2026-07-17T23:19:48.000Z",
+          "responseTimeMs": 308
+        },
+        {
+          "timestamp": "2026-07-18T23:21:05.000Z",
+          "responseTimeMs": 469
+        },
+        {
+          "timestamp": "2026-07-19T23:22:13.000Z",
+          "responseTimeMs": 350
+        },
+        {
+          "timestamp": "2026-07-20T23:24:20.000Z",
+          "responseTimeMs": 310
+        },
+        {
+          "timestamp": "2026-07-21T23:22:27.000Z",
+          "responseTimeMs": 353
+        },
+        {
+          "timestamp": "2026-07-22T23:24:09.000Z",
+          "responseTimeMs": 481
+        },
+        {
+          "timestamp": "2026-07-23T23:22:52.000Z",
+          "responseTimeMs": 309
+        },
+        {
+          "timestamp": "2026-07-24T23:24:49.000Z",
+          "responseTimeMs": 369
+        },
+        {
+          "timestamp": "2026-07-25T23:22:45.000Z",
+          "responseTimeMs": 492
+        },
+        {
+          "timestamp": "2026-07-27T23:26:13.000Z",
+          "responseTimeMs": 392
+        },
+        {
+          "timestamp": "2026-07-28T23:24:19.000Z",
+          "responseTimeMs": 516
+        }
+      ]
+    },
+    {
+      "serviceId": "storage",
+      "checkId": "storage",
+      "protocol": "ipv4",
+      "samples": [
+        {
+          "timestamp": "2026-07-05T12:01:29.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T12:03:29.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T12:11:30.000Z",
+          "responseTimeMs": 468
+        },
+        {
+          "timestamp": "2026-07-05T12:15:19.000Z",
+          "responseTimeMs": 485
+        },
+        {
+          "timestamp": "2026-07-05T12:18:46.000Z",
+          "responseTimeMs": 443
+        },
+        {
+          "timestamp": "2026-07-05T12:20:56.000Z",
+          "responseTimeMs": 481
+        },
+        {
+          "timestamp": "2026-07-05T12:21:28.000Z",
+          "responseTimeMs": 477
+        },
+        {
+          "timestamp": "2026-07-05T12:22:59.000Z",
+          "responseTimeMs": 487
+        },
+        {
+          "timestamp": "2026-07-05T23:26:42.000Z",
+          "responseTimeMs": 479
+        },
+        {
+          "timestamp": "2026-07-06T14:44:10.000Z",
+          "responseTimeMs": 492
+        },
+        {
+          "timestamp": "2026-07-06T23:28:48.000Z",
+          "responseTimeMs": 367
+        },
+        {
+          "timestamp": "2026-07-07T23:23:42.000Z",
+          "responseTimeMs": 474
+        },
+        {
+          "timestamp": "2026-07-08T23:27:56.000Z",
+          "responseTimeMs": 321
+        },
+        {
+          "timestamp": "2026-07-09T23:31:01.000Z",
+          "responseTimeMs": 333
+        },
+        {
+          "timestamp": "2026-07-10T23:23:28.000Z",
+          "responseTimeMs": 310
+        },
+        {
+          "timestamp": "2026-07-12T23:21:06.000Z",
+          "responseTimeMs": 508
+        },
+        {
+          "timestamp": "2026-07-13T23:21:38.000Z",
+          "responseTimeMs": 317
+        },
+        {
+          "timestamp": "2026-07-14T23:21:08.000Z",
+          "responseTimeMs": 403
+        },
+        {
+          "timestamp": "2026-07-15T23:23:07.000Z",
+          "responseTimeMs": 510
+        },
+        {
+          "timestamp": "2026-07-17T23:19:48.000Z",
+          "responseTimeMs": 317
+        },
+        {
+          "timestamp": "2026-07-18T23:21:06.000Z",
+          "responseTimeMs": 485
+        },
+        {
+          "timestamp": "2026-07-19T23:22:15.000Z",
+          "responseTimeMs": 361
+        },
+        {
+          "timestamp": "2026-07-20T23:24:22.000Z",
+          "responseTimeMs": 345
+        },
+        {
+          "timestamp": "2026-07-21T23:22:29.000Z",
+          "responseTimeMs": 362
+        },
+        {
+          "timestamp": "2026-07-22T23:24:10.000Z",
+          "responseTimeMs": 496
+        },
+        {
+          "timestamp": "2026-07-23T23:22:53.000Z",
+          "responseTimeMs": 320
+        },
+        {
+          "timestamp": "2026-07-24T23:24:49.000Z",
+          "responseTimeMs": 362
+        },
+        {
+          "timestamp": "2026-07-25T23:22:46.000Z",
+          "responseTimeMs": 511
+        },
+        {
+          "timestamp": "2026-07-27T23:26:14.000Z",
+          "responseTimeMs": 406
+        },
+        {
+          "timestamp": "2026-07-28T23:24:20.000Z",
+          "responseTimeMs": 496
+        }
+      ]
+    },
+    {
+      "serviceId": "website",
+      "checkId": "website",
+      "protocol": "ipv4",
+      "samples": [
+        {
+          "timestamp": "2026-07-05T10:58:36.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:05:01.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:15:03.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:41:02.000Z",
+          "responseTimeMs": null
+        },
+        {
+          "timestamp": "2026-07-05T11:45:18.000Z",
+          "responseTimeMs": 529
+        },
+        {
+          "timestamp": "2026-07-05T12:01:14.000Z",
+          "responseTimeMs": 476
+        },
+        {
+          "timestamp": "2026-07-05T12:03:10.000Z",
+          "responseTimeMs": 510
+        },
+        {
+          "timestamp": "2026-07-05T12:15:10.000Z",
+          "responseTimeMs": 978
+        },
+        {
+          "timestamp": "2026-07-05T12:18:41.000Z",
+          "responseTimeMs": 916
+        },
+        {
+          "timestamp": "2026-07-05T12:20:49.000Z",
+          "responseTimeMs": 657
+        },
+        {
+          "timestamp": "2026-07-05T12:21:22.000Z",
+          "responseTimeMs": 657
+        },
+        {
+          "timestamp": "2026-07-05T12:22:53.000Z",
+          "responseTimeMs": 925
+        },
+        {
+          "timestamp": "2026-07-05T23:26:35.000Z",
+          "responseTimeMs": 901
+        },
+        {
+          "timestamp": "2026-07-06T14:44:05.000Z",
+          "responseTimeMs": 669
+        },
+        {
+          "timestamp": "2026-07-06T23:28:44.000Z",
+          "responseTimeMs": 511
+        },
+        {
+          "timestamp": "2026-07-07T23:23:35.000Z",
+          "responseTimeMs": 1011
+        },
+        {
+          "timestamp": "2026-07-08T23:27:51.000Z",
+          "responseTimeMs": 612
+        },
+        {
+          "timestamp": "2026-07-09T23:30:57.000Z",
+          "responseTimeMs": 561
+        },
+        {
+          "timestamp": "2026-07-10T23:23:24.000Z",
+          "responseTimeMs": 599
+        },
+        {
+          "timestamp": "2026-07-12T23:21:01.000Z",
+          "responseTimeMs": 791
+        },
+        {
+          "timestamp": "2026-07-13T23:21:34.000Z",
+          "responseTimeMs": 690
+        },
+        {
+          "timestamp": "2026-07-14T23:21:02.000Z",
+          "responseTimeMs": 808
+        },
+        {
+          "timestamp": "2026-07-15T23:23:02.000Z",
+          "responseTimeMs": 768
+        },
+        {
+          "timestamp": "2026-07-17T23:19:44.000Z",
+          "responseTimeMs": 532
+        },
+        {
+          "timestamp": "2026-07-18T23:20:56.000Z",
+          "responseTimeMs": 1011
+        },
+        {
+          "timestamp": "2026-07-19T23:22:10.000Z",
+          "responseTimeMs": 878
+        },
+        {
+          "timestamp": "2026-07-20T23:24:17.000Z",
+          "responseTimeMs": 652
+        },
+        {
+          "timestamp": "2026-07-21T23:22:23.000Z",
+          "responseTimeMs": 594
+        },
+        {
+          "timestamp": "2026-07-22T23:24:05.000Z",
+          "responseTimeMs": 702
+        },
+        {
+          "timestamp": "2026-07-23T23:22:50.000Z",
+          "responseTimeMs": 545
+        },
+        {
+          "timestamp": "2026-07-24T23:24:46.000Z",
+          "responseTimeMs": 662
+        },
+        {
+          "timestamp": "2026-07-25T23:22:41.000Z",
+          "responseTimeMs": 1295
+        },
+        {
+          "timestamp": "2026-07-27T23:26:10.000Z",
+          "responseTimeMs": 662
+        },
+        {
+          "timestamp": "2026-07-28T23:24:15.000Z",
+          "responseTimeMs": 862
+        }
+      ]
+    }
+  ]
+}
