@@ -42,7 +42,7 @@ jobs:
           ref: velvet-data
           path: .velvet-data
       - name: Build Velvet site
-        uses: phranck/velvet@ced0142c342e9373227b81cfc1bcbb58585d0ec5
+        uses: phranck/velvet@c1f5bf81f3ba6e226f2b5cb7b17c5e48ded5a4f1
         with:
           config: velvet.yml
           data: .velvet-data/velvet-data/v1
