@@ -6,8 +6,8 @@
         "serviceId": "backend",
         "checkId": "backend",
         "targetAvailability": "available",
-        "checkedAt": "2026-07-30T06:08:17.138Z",
-        "responseTimeMs": 608.542398,
+        "checkedAt": "2026-07-30T07:08:23.808Z",
+        "responseTimeMs": 405.4574,
         "statusCode": 200,
         "failureCode": null,
         "status": "up",
@@ -20,8 +20,8 @@
         "serviceId": "dashboard",
         "checkId": "dashboard",
         "targetAvailability": "available",
-        "checkedAt": "2026-07-30T06:08:17.640Z",
-        "responseTimeMs": 501.67652599999997,
+        "checkedAt": "2026-07-30T07:08:24.179Z",
+        "responseTimeMs": 370.467723,
         "statusCode": 200,
         "failureCode": null,
         "status": "up",
@@ -34,8 +34,8 @@
         "serviceId": "database",
         "checkId": "database",
         "targetAvailability": "available",
-        "checkedAt": "2026-07-30T06:08:18.122Z",
-        "responseTimeMs": 482.11033,
+        "checkedAt": "2026-07-30T07:08:24.482Z",
+        "responseTimeMs": 302.274316,
         "statusCode": 200,
         "failureCode": null,
         "status": "up",
@@ -48,8 +48,8 @@
         "serviceId": "storage",
         "checkId": "storage",
         "targetAvailability": "available",
-        "checkedAt": "2026-07-30T06:08:18.611Z",
-        "responseTimeMs": 488.302944,
+        "checkedAt": "2026-07-30T07:08:24.806Z",
+        "responseTimeMs": 324.29438000000005,
         "statusCode": 200,
         "failureCode": null,
         "status": "up",
@@ -62,8 +62,8 @@
         "serviceId": "website",
         "checkId": "website",
         "targetAvailability": "available",
-        "checkedAt": "2026-07-30T06:08:19.308Z",
-        "responseTimeMs": 697.371142,
+        "checkedAt": "2026-07-30T07:08:25.228Z",
+        "responseTimeMs": 421.27819400000044,
         "statusCode": 200,
         "failureCode": null,
         "status": "up",
@@ -2694,7 +2694,7 @@
   "documents": {
     "status": {
       "schemaVersion": 1,
-      "generatedAt": "2026-07-30T06:08:19.309Z",
+      "generatedAt": "2026-07-30T07:08:25.228Z",
       "monitoringStartedAt": "2026-07-05T10:57:35.000Z",
       "services": [
         {
@@ -2706,8 +2706,8 @@
               "id": "backend",
               "protocol": "ipv4",
               "status": "operational",
-              "checkedAt": "2026-07-30T06:08:17.138Z",
-              "responseTimeMs": 608.542398
+              "checkedAt": "2026-07-30T07:08:23.808Z",
+              "responseTimeMs": 405.4574
             }
           ],
           "dailyAvailability": [
@@ -2833,7 +2833,7 @@
             },
             {
               "date": "2026-07-30",
-              "monitoredSeconds": 22099,
+              "monitoredSeconds": 25705,
               "unavailableSeconds": 0
             }
           ]
@@ -2847,8 +2847,8 @@
               "id": "dashboard",
               "protocol": "ipv4",
               "status": "operational",
-              "checkedAt": "2026-07-30T06:08:17.640Z",
-              "responseTimeMs": 501.67652599999997
+              "checkedAt": "2026-07-30T07:08:24.179Z",
+              "responseTimeMs": 370.467723
             }
           ],
           "dailyAvailability": [
@@ -2974,7 +2974,7 @@
             },
             {
               "date": "2026-07-30",
-              "monitoredSeconds": 22099,
+              "monitoredSeconds": 25705,
               "unavailableSeconds": 0
             }
           ]
@@ -2988,8 +2988,8 @@
               "id": "database",
               "protocol": "ipv4",
               "status": "operational",
-              "checkedAt": "2026-07-30T06:08:18.122Z",
-              "responseTimeMs": 482.11033
+              "checkedAt": "2026-07-30T07:08:24.482Z",
+              "responseTimeMs": 302.274316
             }
           ],
           "dailyAvailability": [
@@ -3115,7 +3115,7 @@
             },
             {
               "date": "2026-07-30",
-              "monitoredSeconds": 22099,
+              "monitoredSeconds": 25705,
               "unavailableSeconds": 0
             }
           ]
@@ -3129,8 +3129,8 @@
               "id": "storage",
               "protocol": "ipv4",
               "status": "operational",
-              "checkedAt": "2026-07-30T06:08:18.611Z",
-              "responseTimeMs": 488.302944
+              "checkedAt": "2026-07-30T07:08:24.806Z",
+              "responseTimeMs": 324.29438000000005
             }
           ],
           "dailyAvailability": [
@@ -3256,7 +3256,7 @@
             },
             {
               "date": "2026-07-30",
-              "monitoredSeconds": 22099,
+              "monitoredSeconds": 25705,
               "unavailableSeconds": 0
             }
           ]
@@ -3270,8 +3270,8 @@
               "id": "website",
               "protocol": "ipv4",
               "status": "operational",
-              "checkedAt": "2026-07-30T06:08:19.308Z",
-              "responseTimeMs": 697.371142
+              "checkedAt": "2026-07-30T07:08:25.228Z",
+              "responseTimeMs": 421.27819400000044
             }
           ],
           "dailyAvailability": [
@@ -3397,7 +3397,7 @@
             },
             {
               "date": "2026-07-30",
-              "monitoredSeconds": 22099,
+              "monitoredSeconds": 25705,
               "unavailableSeconds": 0
             }
           ]
@@ -4180,10 +4180,10 @@
       "completedAt": "2026-07-29T23:06:50.146Z"
     },
     {
-      "id": "30521362772:response",
-      "kind": "response",
-      "startedAt": "2026-07-30T06:59:44.589Z",
-      "completedAt": "2026-07-30T06:59:47.247Z"
+      "id": "30521896763:status",
+      "kind": "uptime",
+      "startedAt": "2026-07-30T07:08:23.401Z",
+      "completedAt": "2026-07-30T07:08:25.228Z"
     }
   ]
 }
