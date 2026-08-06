@@ -3529,6 +3529,36 @@
       "checkId": "website",
       "timestamp": "2026-08-06T07:00:10.909Z",
       "responseTimeMs": 667.0559269999999
+    },
+    {
+      "serviceId": "backend",
+      "checkId": "backend",
+      "timestamp": "2026-08-06T12:42:37.655Z",
+      "responseTimeMs": 642.7558950000002
+    },
+    {
+      "serviceId": "dashboard",
+      "checkId": "dashboard",
+      "timestamp": "2026-08-06T12:42:38.170Z",
+      "responseTimeMs": 514.4445310000001
+    },
+    {
+      "serviceId": "database",
+      "checkId": "database",
+      "timestamp": "2026-08-06T12:42:38.589Z",
+      "responseTimeMs": 418.2734760000003
+    },
+    {
+      "serviceId": "storage",
+      "checkId": "storage",
+      "timestamp": "2026-08-06T12:42:39.010Z",
+      "responseTimeMs": 421.1368090000001
+    },
+    {
+      "serviceId": "website",
+      "checkId": "website",
+      "timestamp": "2026-08-06T12:42:39.488Z",
+      "responseTimeMs": 478.2775069999998
     }
   ],
   "documents": {
@@ -4421,7 +4451,7 @@
     },
     "responseTimes": {
       "schemaVersion": 1,
-      "generatedAt": "2026-08-06T07:00:10.909Z",
+      "generatedAt": "2026-08-06T12:42:39.489Z",
       "monitoringStartedAt": "2026-07-05T10:57:35.000Z",
       "series": [
         {
@@ -4688,6 +4718,10 @@
             {
               "timestamp": "2026-08-06T07:00:08.746Z",
               "responseTimeMs": 561.9241219999999
+            },
+            {
+              "timestamp": "2026-08-06T12:42:37.655Z",
+              "responseTimeMs": 642.7558950000002
             }
           ]
         },
@@ -4955,6 +4989,10 @@
             {
               "timestamp": "2026-08-06T07:00:09.291Z",
               "responseTimeMs": 544.40092
+            },
+            {
+              "timestamp": "2026-08-06T12:42:38.170Z",
+              "responseTimeMs": 514.4445310000001
             }
           ]
         },
@@ -5222,6 +5260,10 @@
             {
               "timestamp": "2026-08-06T07:00:09.763Z",
               "responseTimeMs": 472.3401180000001
+            },
+            {
+              "timestamp": "2026-08-06T12:42:38.589Z",
+              "responseTimeMs": 418.2734760000003
             }
           ]
         },
@@ -5473,6 +5515,10 @@
             {
               "timestamp": "2026-08-06T07:00:10.241Z",
               "responseTimeMs": 477.77922800000033
+            },
+            {
+              "timestamp": "2026-08-06T12:42:39.010Z",
+              "responseTimeMs": 421.1368090000001
             }
           ]
         },
@@ -5740,6 +5786,10 @@
             {
               "timestamp": "2026-08-06T07:00:10.909Z",
               "responseTimeMs": 667.0559269999999
+            },
+            {
+              "timestamp": "2026-08-06T12:42:39.488Z",
+              "responseTimeMs": 478.2775069999998
             }
           ]
         }
@@ -5755,10 +5805,10 @@
       "completedAt": "2026-07-29T23:06:50.146Z"
     },
     {
-      "id": "31099783383:status",
-      "kind": "uptime",
-      "startedAt": "2026-08-06T12:03:34.953Z",
-      "completedAt": "2026-08-06T12:03:36.755Z"
+      "id": "31102542642:response",
+      "kind": "response",
+      "startedAt": "2026-08-06T12:42:37.011Z",
+      "completedAt": "2026-08-06T12:42:39.489Z"
     }
   ]
 }
